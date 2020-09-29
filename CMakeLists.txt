@@ -904,7 +904,7 @@ else()
         # all of them.
         #
         set(PROJECT_SOURCE_LIST_C ${PROJECT_SOURCE_LIST_C} missing/snprintf.c)
-    elif(NOT HAVE_ASPRINTF)
+    elseif(NOT HAVE_ASPRINTF)
         #
         # We assume we have snprintf()/vsnprintf() but lack
         # asprintf()/vasprintf(); missing/asprintf.c supplies
